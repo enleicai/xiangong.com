@@ -1,4 +1,5 @@
 scripts/vendor
+.sass-cache
 sass
 config.rb
 *.jade

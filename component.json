@@ -1,0 +1,8 @@
+{
+    "name": "xiangong.com",
+    "version": "1.0.0",
+    "dependencies": {
+        "requirejs": null,
+        "jquery": null
+    }
+}

@@ -1,3 +1,6 @@
 scripts/vendor
+sass
+config.rb
+*.jade
 .idea
 .DS_Store

@@ -3,5 +3,6 @@ scripts/vendor
 sass
 config.rb
 *.jade
+*.swp
 .idea
 .DS_Store

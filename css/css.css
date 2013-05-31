@@ -14,3 +14,9 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; content: n
 a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+.header { background: rgba(255, 0, 0, 0.1); }
+
+.footer { background: rgba(0, 255, 0, 0.1); }
+
+.index_view { background: rgba(255, 255, 0, 0.1); }

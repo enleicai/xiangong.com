@@ -31,8 +31,92 @@
     </div>
   </div>
   <div class="content">
-    <div class="index_view">index_view</div>
+    <div class="index_view">
+      <div class="box box_01">
+        <p>广告导航</p>
+      </div>
+      <div class="box box_02">
+        <div class="box_0201">
+          <div class="credit_list">
+            <div class="title"><a href="javascript:;" class="more">更多借款 &gt;</a>
+              <h3>最新借款列表</h3>
+            </div>
+            <div class="con">
+              <table>
+                <tbody>
+                  <tr>
+                    <td> <strong class="icn_02">&nbsp;</strong>CFlN20020239930955</td>
+                    <td><strong>投资金额</strong><span class="oc">&yen;300,00</span></td>
+                    <td><strong>期限</strong><span class="oc">36个月</span></td>
+                    <td><strong>年化利率</strong><span class="oc">30%</span></td>
+                    <td><span class="gc">交易成功</span></td>
+                  </tr>
+                  <tr>
+                    <td> <strong class="icn_02">&nbsp;</strong>CFlN20020239930955</td>
+                    <td><strong>投资金额</strong><span class="oc">&yen;300,00</span></td>
+                    <td><strong>期限</strong><span class="oc">36个月</span></td>
+                    <td><strong>年化利率</strong><span class="oc">30%</span></td>
+                    <td><span class="completion"><span style="width:66%">66%</span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="box_0202">
+          <div class="news">
+            <div class="title"><a href="javascript:;" class="more">更多 &gt;</a></div>
+            <div class="test">
+              <div class="tab_nav">
+                <ul>
+                  <li><a href="javascript:;" data-tab-nav="01">公告</a></li>
+                  <li><a href="javascript:;" data-tab-nav="02">新闻</a></li>
+                </ul>
+              </div>
+              <div class="tab_con">
+                <div data-tab-con="01">
+                  <p>01</p>
+                </div>
+                <div data-tab-con="02">
+                  <p>02</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="help">
+            <p>help</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script>
+    (function($){
+        $(function(){
+            $('.credit_list').find('tr:even').addClass('even');
+            jQuery.fn.extend({
+                tab: function(){
+                    this.each(function(){
+                        var nav, con;
+                        nav = $(this).find('[data-tab-nav]');
+                        con = $(this).find('[data-tab-con]');
+                        
+                        nav.on('click', function(){
+                            var current = $(this).attr('data-tab-nav');
+                            
+                            nav.removeClass('on');
+                            $(this).addClass('on');
+                            
+                            return false;
+                        });
+                    });
+                }
+            });
+            
+            $('.test').tab();
+        });
+    })(jQuery);
+  </script>
   <div class="footer">
     <div class="nav">
       <ul>

@@ -15,12 +15,33 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-.spr_01-sprite, .header .logo a, .header .login .icn_01 { background: url('/images/spr_01-s39e437402d.png') no-repeat; }
+.spr_01-sprite, .icn_01, .icn_02, .header .logo a { background: url('/images/spr_01-s220c10cd70.png') no-repeat; }
+
+.title { *zoom: 1; }
+.title:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+.title .more { font-size: 12px; float: right; color: #969594; text-decoration: none; }
+.title h3 { font-size: 14px; font-weight: 700; color: #333333; }
+
+.icn_01 { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 13px; height: 13px; background-position: 0 -86px; }
+
+.icn_02 { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 14px; height: 14px; background-position: 0 -72px; }
+
+.oc { color: #e78b40; }
+
+.gc { color: #969594; }
+
+table { width: 100%; }
+table tr { background: #eff0f1; }
+table tr.even { background: white; }
+table td { font-size: 12px; vertical-align: middle; height: 24px; }
+
+.completion { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 42px; border: 1px solid #969594; }
+.completion span { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; background: #72b43d; font-size: 10px; }
 
 .header { width: 976px; height: 104px; margin: 0 auto; position: relative; }
 .header .logo a { display: block; width: 188px; height: 72px; text-indent: -999em; overflow: hidden; position: absolute; top: 16px; left: 10px; background-position: 0 0; }
 .header .login { float: right; margin-top: 14px; }
-.header .login .icn_01 { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 13px; height: 13px; text-indent: -999em; overflow: hidden; vertical-align: middle; background-position: 0 -72px; }
+.header .login .icn_01 { text-indent: -999em; overflow: hidden; vertical-align: middle; }
 .header .login ul { *zoom: 1; }
 .header .login ul:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
 .header .login ul li { float: left; display: inline; }
@@ -48,3 +69,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer .copyright p { font-size: 12px; color: #969594; }
 
 .index_view { background: rgba(255, 255, 0, 0.1); width: 976px; margin: 0 auto; }
+.index_view .box_02 { *zoom: 1; background: white; }
+.index_view .box_02:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+.index_view .box_02 .box_0201, .index_view .box_02 .box_0202 { float: left; display: inline; }
+.index_view .box_02 .box_0202 { width: 236px; background: rgba(0, 255, 0, 0.2); }
+.index_view .box_02 .box_0201 { width: 740px; background: rgba(0, 255, 255, 0.2); }
+.index_view .box_02 .box_0201 .title { border-bottom: 2px solid #86ad5c; padding: 6px 0; }
+.index_view .box_02 .box_0201 .title h3 { border-left: 2px solid #346e4b; padding: 2px 0 2px 10px; }
+.index_view .box_02 .box_0201 .title .more { line-height: 18px; }
+.index_view .box_02 .credit_list { margin-right: 16px; }
+.index_view .box_02 .credit_list strong { margin-right: 6px; }
